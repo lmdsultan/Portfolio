@@ -4,8 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import "../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import logo from "../Assets/logo.png";
-import Button from "react-bootstrap/Button";
+// import logo from "../Assets/logo.png";
 import { Link } from "react-router-dom";
 
 function NavBar() {
@@ -30,9 +29,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/">
-          <img src={logo} className="img-fluid logo" alt="brand" />
-        </Navbar.Brand>
+
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -76,17 +73,6 @@ function NavBar() {
               >
                 <i className="far fa-file-alt"></i> Resume
               </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/soumyajit4419/Portfolio"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <i className="fas fa-code-branch"></i>{" "}
-                <i className="far fa-star"></i>
-              </Button>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

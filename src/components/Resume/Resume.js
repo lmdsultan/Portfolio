@@ -6,7 +6,7 @@ import Resumecontent from "./ResumeContent";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
-import pdf from "../../Assets/Soumyajit-Resume.pdf";
+import pdf from "../../Assets/MohammedAlenazi_SoftwareEngineering.pdf";
 
 function Resume() {
   const uri = "https://porfolio-backend.vercel.app/ranks/getRanks";
@@ -34,60 +34,60 @@ function Resume() {
       <Particle />
       <Container>
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button variant="primary" href={pdf} target="_blank">
+          {/* <Button variant="primary" href={pdf} target="_blank">
             <i className="fas fa-download">&nbsp;</i>Download CV
-          </Button>
+          </Button> */}
         </Row>
         <Row className="resume">
           <Col md={6} className="resume-left">
             <h3 className="resume-title">Experience</h3>
             <Resumecontent
-              title="JUNIOR ML ENGINEER [Omdena]"
-              date="June 2020 - August 2020"
+              title="Technical Support Specialist [Channels by STC]"
+              date="Sep 2018 - Present"
               content={[
-                "Assembled the data from various social media platforms using Twitter, Reddit.Interpreted the collected text using word-clouds and various other factors that affect the change of sentiments of youth.",
-                " Utilized the data to find the issues using Topic Modelling and Building models using LSTM, BERT to predict the sentiments of the youth.",
-              ]}
+                "Responsible for investigate and diagnose incidents to restore a failed IT Service as quickly as possible. Escalate Major Incidents to the Incident or Problem Manager. Verify resolution with end-users and resolve assigned Incidents. In addition, perform daily, weekly or monthly analysis report.",              ]}
             />
+            <Resumecontent
+
+
+              title="Software Engineer - Participant [General Assembly]"
+              date="Nov 2019 - Feb 2020"
+              content={[
+                "Participated in a 3-month program bootcamp of 480+ hrs of in-class, project based certification by GA and Misk Academy.During the bootcamp I successfully executed the following projects.",       ]}
+            />
+{/* 
             <h3 className="resume-title">Extracurricular Activities</h3>
             <Resumecontent
-              title="Web Developer [Pantheon-2019 Technical Fest of BIT Mesra]"
+              title="Web Developer"
               content={[
-                "Worked on creating the frontend-end of the website using Bootstrap, Javascript.",
+                "Worked on creating frontend-end of the websites using Bootstrap, Javascript.",
               ]}
-            />
-            <Resumecontent
+            /> */}
+            {/* <Resumecontent
               title="Web Developer [Bitotsav-2020 Technical Fest of BIT Mesra]"
               content={[
                 "Operated on developing the frontend end of the website using Bootstrap, Javascript and backend APIs using Node.js",
               ]}
-            />
+            /> */}
           </Col>
           <Col md={6} className="resume-right">
             <h3 className="resume-title">Education</h3>
             <Resumecontent
-              title="IMSC MATHS AND COMPUTING [BIT Mesra, Ranchi] "
-              date="2018 - Present"
-              content={[`CGPA: ${cgpa} (Till ${sem}th Sem)`]}
+              title="BS - Software Engineering  [Robert Morris University] "
+              date="2014 - 2018"
+              content={['Engineering approaches to the development of software']}
             />
             <Resumecontent
-              title="12TH BOARD [ODM Public School,Odisha]"
-              date="2015 - 2017"
-              content={["Precentage: 88%"]}
+              title="Software Engineering Immersive Cours [General Assembly]
+]"
+              date="2019 - 2020"
+              content={["Web Development using MERN stack"]}
             />
+            <h3 className="resume-title">Extracurricular Activities</h3>
             <Resumecontent
-              title="10TH BOARD [ST Mary's School,Odisha] "
-              date="2005 - 2015"
-              content={["Precentage: 86%"]}
-            />
-            <h3 className="resume-title">Ranks and Achivements</h3>
-            <Resumecontent
-              title=""
+              title="Web Developer"
               content={[
-                `Current rank in Spoj ${spojRank}`,
-                `Current rank in HackerRank  ${hackerrank}`,
-                "Top Performer in Code-Break 1.0",
-                "Participant in Hack-A-Bit 2019",
+                "Worked on creating frontend-end of the websites using Bootstrap, Javascript.",
               ]}
             />
           </Col>

@@ -1,17 +1,17 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
-  );
+    black,
+    black
+      );
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
+    rgba(224, 203, 14, 0.904)
+    rgba(224, 203, 14, 0.904)
   );
 
-  --imp-text-color: #c770f0;
+  --imp-text-color: #E7B405;
 }
 
 .purple {
@@ -53,18 +53,18 @@ html {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: black;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: #E7B405;
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: #E7B405;
   border-radius: 12px;
 }
 
@@ -72,9 +72,9 @@ html {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #212038d8 !important;
+  background-color: #E7B405 !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  box-shadow: 0px 10px 10px 0px #E7B405 !important;
   backdrop-filter: blur(15px) !important;
 }
 
@@ -94,7 +94,7 @@ html {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: #E7B405 !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -191,7 +191,7 @@ html {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: #E7B405;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -207,7 +207,7 @@ html {
 /* --------- */
 .wave {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
+  animation-duration: 3.1s; /* Change to speed up or slow down */
   animation-iteration-count: infinite; /* Never stop waving :) */
   transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
@@ -248,7 +248,7 @@ html {
 }
 
 .home-header {
-  padding-top: 80px !important;
+  padding-top: 400px !important;
 }
 
 .home-section {
@@ -283,12 +283,12 @@ html {
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
+  color: #E7B405 !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: #E7B405 !important;
 }
 
 @media (max-width: 767px) {
@@ -368,7 +368,7 @@ html {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #68187a;
+  background: #E7B405;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -376,13 +376,13 @@ html {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+  box-shadow: 0 0 15px #E7B405;
 }
 
 .home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+  color: #E7B405;
+  box-shadow: 0 0 5px #E7B405;
+  text-shadow: 0 0 2px #E7B405;
 }
 
 .social-icons {
@@ -399,7 +399,8 @@ html {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  color: black !important;
+  background-color: #E7B405;
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -435,7 +436,7 @@ html {
 }
 
 .blockquote-footer {
-  color: #a588c0 !important;
+  color: #E7B405 !important;
 }
 /* --------- */
 /* Projects */
@@ -456,7 +457,7 @@ html {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  box-shadow: 0 4px 5px 3px  #E7B405 !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -466,7 +467,7 @@ html {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 4px 5px #E7B405 !important;
 }
 
 .blog-card {
@@ -479,7 +480,7 @@ html {
 
 .blog-card-view {
   background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
+  box-shadow: 0 3px 3px 2px #E7B405 !important;
   color: white !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
@@ -513,15 +514,15 @@ html {
 }
 
 .btn-primary {
-  color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  color: black !important;
+  background-color: #E7B405 !important;
+  border-color: #E7B405 !important;
 }
 
 .btn-primary:hover {
-  color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  color: black !important;
+  background-color: #E7B405 !important;
+  border-color: #E7B405 !important;
 }
 .btn:focus {
   outline: none !important;
@@ -550,7 +551,7 @@ html {
   font-size: 4.5em !important;
   margin: 15px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border: 1.7px solid #E7B405 !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
@@ -569,7 +570,7 @@ html {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  border: 2.2px solid #E7B405 !important;
 }
 .tech-icon-images {
   padding: 20px !important;
@@ -638,14 +639,15 @@ html {
 .resume .resume-item {
   padding: 0 0 10px 25px;
   margin-top: -2px;
-  border-left: 2px solid #8a49a8;
+  border-left: 2px solid #E7B405;
   position: relative;
 }
 
 .resume .resume-item .resume-title {
+  color: black !important;
   line-height: 18px;
   font-size: 0.9em;
-  background: #5234795d;
+  background: #E7B405;
   padding: 8px 15px;
   display: inline-block;
   font-weight: 600;
@@ -675,7 +677,7 @@ html {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #8a49a8;
+  border: 2px solid #E7B405;
 }
 
 .like-item {
